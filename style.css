@@ -60,11 +60,13 @@ h1 {
 }
 
 #navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
   padding: 16px;
+  width: 100%;
 }
 
 .navbar__logo {
@@ -92,6 +94,11 @@ h1 {
 
 .menu__item:hover {
   color: black;
+}
+
+#courses {
+  padding: 40px;
+  padding-top: 120px;
 }
 
 .courses__container {
@@ -132,4 +139,60 @@ input::placeholder {
 .search__button {
   padding: 10px 15px;
   background-color: var(--color-light-grey);
+}
+
+.course__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.course__list-item {
+  max-width: 400px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  flex: 0 0 100%;
+  padding-bottom: 2rem;
+}
+
+.course__description {
+  background-color: var(--color-light-grey);
+  padding: 2rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course__description h2 {
+  font-size: 1.125rem;
+  color: var(--color-dark-grey);
+}
+
+.course__description h3 {
+  font-size: 0.75019rem;
+  color: var(--color-dark-grey);
+}
+
+.star {
+  font-size: 0.75019rem;
+  color: var(--color-pink);
+}
+
+.review__count {
+  font-size: 0.75019rem;
+  color: var(--color-dark-white);
+}
+
+.course__detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.lesson__count,
+.lesson__price {
+  font-size: 0.875rem;
+  font-weight: var(--weight-bold);
+  padding: 0.75rem 0.5rem;
 }
