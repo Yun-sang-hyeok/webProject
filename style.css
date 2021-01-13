@@ -111,6 +111,7 @@ h1 {
 
 .menu__item:hover {
   color: black;
+  transition: all 200ms ease;
 }
 
 .courses__container {
@@ -297,8 +298,8 @@ input::placeholder {
   margin: 0px 0px;
 }
 
-.intermediate__title h3 {
-  font-size: var(--font-medium);
+.h3__title {
+  margin-bottom: 36px;
 }
 
 .intermediate__body {
