@@ -386,6 +386,19 @@ input::placeholder {
   margin: 8px 0px;
 }
 
+.basic__course__list {
+  display: flex;
+}
+
+.basic__course__list-item {
+  position: relative;
+  max-width: 400px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  flex: 0 0 100%;
+  padding-bottom: 2rem;
+}
+
 footer {
   color: var(--color-dark-pink);
 }
@@ -442,4 +455,26 @@ footer {
   font-size: 14px;
   font-weight: var(--weight-semi-bold);
   padding-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
 }
