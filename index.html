@@ -38,10 +38,10 @@
         <h1>Courses</h1>
         <div class="courses__container">
             <div class="course__categories">
-                <button class="course__menu">개발 기본</button>
-                <button class="course__menu">프론트엔드 기본</button>
-                <button class="course__menu">프론트엔드 중급</button>
-                <button class="course__menu">All Courses</button>
+                <button class="course__menu" data-filter="develop-basic">개발 기본</button>
+                <button class="course__menu" data-filter="front-end-basic">프론트엔드 기본</button>
+                <button class="course__menu" data-filter="front-end-intermediate">프론트엔드 중급</button>
+                <button class="course__menu selected" data-filter="*">All Courses</button>
             </div>
             <div class="search__form">
                 <input class="search__form-background" type="text" placeholder="Search">
@@ -49,8 +49,10 @@
             </div>
         </div>
             <ul class="course__list">
-                <li class="course__list-item">
-                    <a class="course__card" href="https://academy.dream-coding.com/courses/react-basic">
+                <li class="course__list-item" data-type="front-end-intermediate">
+                    <a class="course__card" 
+                        href="https://academy.dream-coding.com/courses/react-basic"
+                    >
                     <div class="course__description">
                         <p class="course__category">All courses, 프론트엔드 중급</p>
                         <h2 class="course__title">리액트 개념 정리 + 유튜브 클론 코딩 외<br/> 실전 프로젝트 완성</h2>
@@ -77,8 +79,10 @@
                     </div>
                 </a>
                 </li>
-                    <li class="course__list-item">
-                        <a class="course__card" href="https://academy.dream-coding.com/courses/portfolio">
+                    <li class="course__list-item" data-type="front-end-basic">
+                        <a class="course__card" 
+                        href="https://academy.dream-coding.com/courses/portfolio"      
+                        >
                         <div class="course__description">
                             <p class="course__category">All courses, 프론트엔드 기본</p>
                             <h2 class="course__title">포트폴리오 웹사이트 클론코딩</h2>
@@ -102,8 +106,10 @@
                         </div>
                     </a>
                     </li>
-                    <li class="course__list-item">
-                        <a class="course__card" href="https://academy.dream-coding.com/courses/browser101">
+                    <li class="course__list-item" data-type="front-end-basic">
+                        <a class="course__card" 
+                        href="https://academy.dream-coding.com/courses/browser101"
+                        >
                         <div class="course__description">
                             <p class="course__category">All courses, 프론트엔드 기본</p>
                             <h2 class="course__title">프론트엔드 필수 브라우저 101 (자바스크립트 마스터 과정| 디버깅, 퍼포먼스 분석, 실전 프로젝트 10개)</h2>
@@ -129,8 +135,10 @@
                             </div>
                         </a>
                     </li>
-                    <li class="course__list-item">
-                        <a class="course__card" href="https://academy.dream-coding.com/courses/mini-shopping">
+                    <li class="course__list-item" data-type="front-end-basic">
+                        <a class="course__card" 
+                        href="https://academy.dream-coding.com/courses/mini-shopping"
+                        >
                         <div class="course__description">
                             <p class="course__category">All courses, 프론트엔드 기본</p>
                             <h2 class="course__title">쇼핑몰 미니게임 클론코딩 & 코드 리뷰</h2>
@@ -154,8 +162,10 @@
                         </div>
                     </a>
                     </li>
-                    <li class="course__list-item">
-                        <a class="course__card" href="https://academy.dream-coding.com/courses/git">
+                    <li class="course__list-item" data-type="develop-basic">
+                        <a class="course__card" 
+                        href="https://academy.dream-coding.com/courses/git"
+                        >
                         <div class="course__description">
                             <p class="course__category">All courses, 개발 기본</p>
                             <h2 class="course__title">Git 마스터 과정 (기본개념부터 실무팁까지)</h2>
