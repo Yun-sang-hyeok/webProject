@@ -144,12 +144,14 @@ h1 {
 
 input::placeholder {
   color: var(--color-grey);
+  opacity: 0.7;
 }
 
 .search__form-background {
-  padding: 10px 32px 10px 15px;
+  padding: 10px 40px 10px 15px;
   background-color: var(--color-light-grey);
   border: 1px solid transparent;
+  outline-color: var(--color-dark-pink);
   transition: all var(--animation-duration) ease-in-out;
 }
 
@@ -158,7 +160,8 @@ input::placeholder {
 }
 
 .search__button {
-  padding: 10px 15px;
+  cursor: pointer;
+  padding: 11px 15px;
   background-color: var(--color-light-grey);
 }
 
@@ -169,6 +172,13 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   color: #0c1721;
+  transition: all 160ms ease-in-out;
+}
+
+.course__card:hover {
+  transform: translateY(-15px);
+  box-shadow: 1px 10px 15px 1px #ddd;
+  filter: brightness(102%);
 }
 
 .course__list {
@@ -322,6 +332,14 @@ input::placeholder {
 .intermediate__body {
   background-color: var(--color-light-grey);
   display: flex;
+  cursor: pointer;
+  transition: all 160ms ease-in-out;
+}
+
+.intermediate__body:hover {
+  transform: translateY(-12px);
+  box-shadow: -5px 5px 15px 5px #ddd;
+  filter: brightness(102%);
 }
 
 .intermediate__left {
