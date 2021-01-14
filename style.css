@@ -61,6 +61,7 @@ button {
   border: none;
   border-radius: 20%;
   background-color: transparent;
+  outline: none;
 }
 
 h1 {
@@ -179,6 +180,7 @@ input::placeholder {
   margin-left: -1rem;
   margin-top: 0px;
   margin-bottom: 0px;
+  transition: all 200ms ease-in;
 }
 
 .course__list-item {
@@ -192,6 +194,11 @@ input::placeholder {
 
 .course__list-item.invisible {
   display: none;
+}
+
+.course__list.anim-out {
+  opacity: 0.1;
+  transform: scale(0.96) translateY(100px);
 }
 
 .course__description {

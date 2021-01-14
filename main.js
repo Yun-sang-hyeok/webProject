@@ -18,6 +18,9 @@ courseBtnContainer.addEventListener('click', (e) => {
     const target = e.target;
     target.classList.add('selected');
 
+
+    courseListContainer.classList.add('anim-out');
+    setTimeout(() => {
     courses.forEach((course) => {
         //console.log(course.dataset.type);
 
@@ -27,4 +30,6 @@ courseBtnContainer.addEventListener('click', (e) => {
             course.classList.add('invisible');
         }
     })
+    courseListContainer.classList.remove('anim-out');
+    },300)
 })
