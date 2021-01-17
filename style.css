@@ -460,11 +460,16 @@ footer {
 @media screen and (max-width: 768px) {
   :root {
     /* Font size */
-    --font-large: 30px;
+    --font-large: 23px;
     --font-medium: 18px;
     --font-regular: 16px;
     --font-small: 14px;
     --font-micro: 12px;
+  }
+
+  .section__container {
+    padding: 16px;
+    padding-top: 40px;
   }
 
   #navbar {
@@ -478,6 +483,25 @@ footer {
     width: 100%;
   }
 
+  .course__container {
+    display: flex;
+  }
+
   .course__categories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course__list {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .basic__title h1 {
+    font-size: var(--font-large);
+  }
+
+  .basic__course__list {
+    flex-direction: column;
   }
 }
