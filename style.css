@@ -493,8 +493,33 @@ footer {
   }
 
   .course__list {
+    width: 100%;
     justify-content: center;
-    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .course__list-item {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .intermediate__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intermediate__left {
+    width: 100%;
+  }
+
+  .intermediate__right {
+    width: 100%;
   }
 
   .basic__title h1 {
@@ -503,5 +528,6 @@ footer {
 
   .basic__course__list {
     flex-direction: column;
+    padding-left: 0px;
   }
 }
