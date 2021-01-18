@@ -103,6 +103,15 @@ h1 {
   display: flex;
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 30px;
+  color: var(--color-dark-pink);
+  display: none;
+}
+
 .menu__item {
   font-size: 0.75019em;
   font-weight: var(--weight-regular);
@@ -473,14 +482,42 @@ footer {
   }
 
   #navbar {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .navbar__logo {
+  }
+
+  .nav__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar__logo {
+    font-size: var(--font-large);
+  }
+
   .navbar__menu {
+    display: none;
     flex-direction: column;
     text-align: center;
+    padding-left: 0px;
     width: 100%;
+  }
+
+  .navbar__menu.open {
+    display: block;
+  }
+
+  .navbar__toggle-btn {
+    top: 23px;
+    right: 12px;
+    display: block;
+    font-size: var--(--font-medium);
   }
 
   .courses__container {

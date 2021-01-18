@@ -1,5 +1,15 @@
 'use strict';
 
+// toggleBtn for mobile
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+})
+
+
+
+
 //Courses
 const courseBtnContainer = document.querySelector('.courses__container');
 const courseListContainer = document.querySelector('.course__list');
