@@ -70,7 +70,11 @@ h1 {
 }
 
 #navbar {
-  position: relative;
+  position: fixed;
+  left: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   width: 100%;
   padding: 1.6rem 1rem;
@@ -78,6 +82,8 @@ h1 {
   padding-right: 1rem;
   margin: 0 auto;
   cursor: pointer;
+  padding: 16px;
+  z-index: 1;
 }
 
 .nav__container {
@@ -85,6 +91,7 @@ h1 {
   align-items: center;
   flex-wrap: nowrap;
   justify-content: space-between;
+  width: 100%;
 }
 
 .navbar__logo {
@@ -482,12 +489,10 @@ footer {
   }
 
   #navbar {
+    left: 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .navbar__logo {
   }
 
   .nav__container {
@@ -507,6 +512,11 @@ footer {
     text-align: center;
     padding-left: 0px;
     width: 100%;
+    background-color: var(--color-dark-pink);
+  }
+
+  .menu__item {
+    color: var(--color-white);
   }
 
   .navbar__menu.open {
