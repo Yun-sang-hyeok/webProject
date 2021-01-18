@@ -483,13 +483,21 @@ footer {
     width: 100%;
   }
 
-  .course__container {
+  .courses__container {
     display: flex;
+    flex-direction: column;
   }
 
   .course__categories {
     display: flex;
     flex-direction: column;
+  }
+
+  .course__menu {
+    text-align: left;
+    display: block;
+    padding: 8px;
+    position: relative;
   }
 
   .course__list {
