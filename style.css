@@ -530,4 +530,9 @@ footer {
     flex-direction: column;
     padding-left: 0px;
   }
+
+  .basic__course__list-item {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
